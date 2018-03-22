@@ -69,24 +69,41 @@ body{
     margin-top: 10vh;
     grid-area: email;
   }
-  .email p:nth-child(2){
-    text-align: left;
-    font-weight: 300;
-    margin-bottom: 5vh;
-  }
   .github{
     grid-area: github;
-  }
-  .github p:nth-child(2){
-    text-align: left;
-    font-weight: 300;
-    margin-bottom: 5vh;
   }
   .codepen{
     grid-area: codepen;
   }
   .codepen p:nth-child(2){
-    text-align: left;
+    text-align: center;
     font-weight: 300;
     margin-bottom: 5vh;
+}
+.email p:nth-child(2){
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 5vh;
+}
+.github p:nth-child(2){
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 5vh;
+}
+  @media (max-width: 1000px){
+    .codepen p:nth-child(2){
+      text-align: left;
+      font-weight: 300;
+      margin-bottom: 5vh;
   }
+  .email p:nth-child(2){
+      text-align: left;
+      font-weight: 300;
+      margin-bottom: 5vh;
+  }
+  .github p:nth-child(2){
+      text-align: left;
+      font-weight: 300;
+      margin-bottom: 5vh;
+  }
+}
