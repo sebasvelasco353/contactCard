@@ -1,0 +1,88 @@
+body{
+    margin: 0px;
+    padding: 0;
+    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+    color: #707070;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 500;
+  }
+  img{
+    width: 15vw;
+    height: 15vw;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+  }
+  a{
+    text-decoration: none;
+    color: #707070;
+  }
+  #container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      ". contactCard contactCard ."
+      ". contactCard contactCard .";
+  }
+  #contactCard{
+    grid-area: contactCard;
+    max-width: 450px;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    padding: 40px;
+    min-height: 60vh;
+    border-radius: 25px;
+    background: #FFF;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, .1);
+    text-align: center;
+    
+    /*  inner grid  */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      ". cardHeader ."
+      ". email ."
+      ". github ."
+      ". codepen .";
+  }
+  .cardHeader{
+    grid-area: cardHeader;
+  }
+  .name{
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  .name p:nth-child(1){
+    margin-bottom: 0.5vh;
+  }
+  .name p:nth-child(2){
+    margin-top: 0;
+  }
+  .place{
+    font-weight: 300;
+  }
+  .email{
+    margin-top: 10vh;
+    grid-area: email;
+  }
+  .email p:nth-child(2){
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: 5vh;
+  }
+  .github{
+    grid-area: github;
+  }
+  .github p:nth-child(2){
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: 5vh;
+  }
+  .codepen{
+    grid-area: codepen;
+  }
+  .codepen p:nth-child(2){
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: 5vh;
+  }
