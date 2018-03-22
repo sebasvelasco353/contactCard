@@ -1,5 +1,5 @@
 body{
-    margin: 0px;
+    margin: 0;
     padding: 0;
     background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
     color: #707070;
@@ -16,6 +16,9 @@ body{
   a{
     text-decoration: none;
     color: #707070;
+  }
+  a:hover{
+    color: #714545;
   }
   #container{
     display: grid;
